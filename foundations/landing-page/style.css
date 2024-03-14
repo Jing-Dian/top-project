@@ -1,0 +1,45 @@
+.header,.intro,.footer{
+    background-color:#1F2937;
+    color: white;
+}
+
+.logo{
+    font-size: 24px;
+
+}
+
+.maintext{
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FaF8;
+}
+
+.subtext{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.infoheader{
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.quote{
+    background-color: #E5E7EB;
+}
+.quoteTxt{
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.cta{
+    background-color: #3882F6;
+    color: white;
+}
+
+.footer{
+
+}
