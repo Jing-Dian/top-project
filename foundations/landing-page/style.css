@@ -1,45 +1,186 @@
-.header,.intro,.footer{
-    background-color:#1F2937;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, sans-serif;
+
+  }
+  
+
+.header,.header .left, .intro, .footer {
+    display: flex;
+    align-items: center;
+    background-color: #1F2937; /* Assuming you want the .left to have the same background */
     color: white;
 }
 
-.logo{
-    font-size: 24px;
+.header{
+    justify-content: space-between;
+    padding: 16px 120px;
 
 }
+
+.logoTxt{
+    font-size: 24px;
+    margin-left: 10px; 
+}
+
+
+ul {
+    display: flex;
+    list-style: none;   
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.header img {
+    height: 50px; 
+    width: auto; 
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.intro{
+    padding: 40px 120px;
+    gap: 40px;
+}
+
+.intro .left{
+    height: auto;
+    width: 50%;
+    margin-bottom: 20px;
+}
+.left button {
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3882F6;
+    color:white;
+    margin-top: 15px;
+}
+  
+
+
+.intro .right img{
+    width: 100%;
+    height: auto;
+}
+
+/* .right and .right img is different */
+
 
 .maintext{
     font-size: 48px;
     font-weight: 800;
     color: #F9FaF8;
+    line-height: 2;
 }
 
 .subtext{
     font-size: 18px;
     color: #E5E7EB;
+    line-height: 1.5;
+}
+
+
+.info{
+    text-align: center;
+    padding: 30px 160px;
+    
 }
 
 .infoheader{
     color: #1f2937;
     font-size: 36px;
     font-weight: 800;
+    margin-bottom: 26px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+.group img{
+    width:100%;
+    height:auto;
+    max-width: 300px;
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.infoTxt{
+    color: #1f2937;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .quote{
     background-color: #E5E7EB;
+    text-align: center;
+    padding: 60px;
+
 }
 .quoteTxt{
     color: #1f2937;
     font-size: 36px;
     font-weight: 300;
     font-style: italic;
+    margin-bottom: 20px;
+}
+
+.quoteName{
+    font-weight: 800;
+    font-size: 20px;
+    margin-left: 66px;
 }
 
 .cta{
     background-color: #3882F6;
     color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 120px;
+    padding: 30px;
+    margin:50px 120px;
+    border-radius: 8px;
 }
+
+
+.head3{
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.cta button {
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: solid white;
+    background-color: #3882F6;
+    color:white;
+}
+  
 
 .footer{
-
+    justify-content: center; 
+    align-items: center;
+    padding: 24px;
+    font-weight: 200;
+    font-size: 0.9em;
 }
+
+/* be careful of the display flex setup */
+/* shared property should be seperately used */
+
+/* when to use text alignt center, when to use justify content center */
+/* when to use gap and when to use justify content space betwen */
